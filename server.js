@@ -5,7 +5,7 @@ const port = process.env.PORT || 6000;
 
 const contactRoutes = require('./routes/contactRoutes');
 
-app.use(contactRoutes);
+app.use('/api/contacts', contactRoutes);
 
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
